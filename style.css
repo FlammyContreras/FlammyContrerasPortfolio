@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background: none;
+    padding: 20px;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*box-shadow: 0 4px 10px rgba(0,0,0,0.1);*/
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+.perfil{
+    background-color: pink;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.perfil:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(255, 167, 167, 0.15);
+}
+.perfil img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.perfil button{
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3 ease;
+}
+
+.perfil button:hover{
+    background-color: palevioletred;
+}
+
+#subtitle{
+    color: rgb(255, 76, 76);
+}
+.headerSections{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.headerSections a{
+    color: rgb(128, 0, 0);
+    text-decoration: none !important;
+    padding: 5px 10px;
+    margin-right: 20px;
+    border-radius: 10%;
+    border: 2px;
+    border-style: solid;
+    border-color: red;
+    background-color: rgb(255, 148, 166);
+}
