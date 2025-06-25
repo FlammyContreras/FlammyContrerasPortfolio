@@ -1,48 +1,65 @@
+:root {
+    --main-color:#FFDCDC;
+    --sub-color: #FFF2EB;
+    --lightd_color: #FFE8CD;
+    --darkd-color: #FFD6BA;
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    background-color: var(--light-color);
+}
 header{
     background: none;
     padding: 20px;
-    color: red;
+    color: var(--main-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*box-shadow: 0 4px 10px rgba(0,0,0,0.1);*/
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.1);
 }
-.container {
+.tarjetas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 40px 20px;
 }
-.perfil{
-    background-color: pink;
+.proyecto{
+    background-color: var(--main-color);
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 250px;
+    width: 450px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.perfil:hover{
+.proyecto:hover{
     transform: translateY(-10px);
     box-shadow: 0 6px 18px rgba(255, 167, 167, 0.15);
 }
-.perfil img{
-    width: 100px;
-    height: 100px;
+.proyecto img{
+    margin-top: 10px;
+    width: 350px;
+    height: 220px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.logo{
+    width: 300px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
 }
 button{
     margin-top: 10px;
-    background-color: red;
-    color: white;
+    background-color: var(--main-color);
+    color: var(--sub-color);
     border: none;
     border-radius: 8px;
     padding: 10px 20px;
@@ -51,11 +68,11 @@ button{
 }
 
 .perfil button:hover{
-    background-color: palevioletred;
+    background-color: var(--dark-color);
 }
 
 #subtitle{
-    color: rgb(255, 76, 76);
+    color: var(--main-color);
 }
 .headerSections{
     padding-top: 20px;
@@ -64,15 +81,15 @@ button{
     align-items: flex-start;
 }
 .headerSections a{
-    color: rgb(128, 0, 0);
+    color: var(--highlight-color);
     text-decoration: none !important;
     padding: 5px 10px;
     margin-right: 20px;
     border-radius: 10%;
     border: 2px;
     border-style: solid;
-    border-color: red;
-    background-color: rgb(255, 148, 166);
+    border-color: var(--dark-color);
+    background-color: var(--light-color);
 }
 
 .imgChica {
@@ -81,4 +98,35 @@ button{
     border-radius: 20%;
     object-fit: cover;
     margin-right: 10px;
+}
+
+.proyect-name{
+    color: rgb(105, 25, 25);
+}
+
+.proyect-author{
+    color:rgb(255, 76, 76);
+}
+.socialmedia-icons{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.socialmedia-icons img{
+    width: 30px;
+    height: 30px;
+}
+
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.etiquetas button{
+    margin-right: 5px;
+    background-color: rgba(206, 56, 161, 0.3);
+    padding: 5px 10px;
 }
