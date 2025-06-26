@@ -1,8 +1,9 @@
 :root {
     --main-color:#FFDCDC;
     --sub-color: #FFF2EB;
-    --lightd_color: #FFE8CD;
-    --darkd-color: #FFD6BA;
+    --light_color: #FFE8CD;
+    --dark-color: #eea0a0;
+    --brownish: #cc5353;
 }
 
 *{
@@ -14,9 +15,9 @@ body{
     background-color: var(--light-color);
 }
 header{
-    background: none;
+    background: var(--main-color);
     padding: 20px;
-    color: var(--main-color);
+    color: var(--brownish);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,8 +59,8 @@ header{
 }
 button{
     margin-top: 10px;
-    background-color: var(--main-color);
-    color: var(--sub-color);
+    background-color: var(--dark-color);
+    color: var(--brownish);
     border: none;
     border-radius: 8px;
     padding: 10px 20px;
@@ -72,7 +73,7 @@ button{
 }
 
 #subtitle{
-    color: var(--main-color);
+    color: var(--dark-color);
 }
 .headerSections{
     padding-top: 20px;
@@ -101,11 +102,11 @@ button{
 }
 
 .proyect-name{
-    color: rgb(105, 25, 25);
+    color: var(--brownish);
 }
 
 .proyect-author{
-    color:rgb(255, 76, 76);
+    color:var(--dark-color);
 }
 .socialmedia-icons{
     margin-top: 20px;
@@ -127,6 +128,33 @@ button{
 
 .etiquetas button{
     margin-right: 5px;
-    background-color: rgba(206, 56, 161, 0.3);
+    background-color: var(--sub-color);
+    color: var(--dark-color);
     padding: 5px 10px;
+}
+
+.title{
+    color: var(--brownish);
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--sub-color);
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+}
+
+.icon {
+    width: 100px;
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    margin: 10px;
+    border-width: 10px;
+    padding: 5px 5px 0px 5px;
+}
+.experience-sub-title{
+    color: var(--brownish);
+    background-color: var(--main-color);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
 }
