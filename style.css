@@ -1,7 +1,7 @@
 :root {
-    --main-color:#FFDCDC;
-    --sub-color: #FFF2EB;
-    --light_color: #FFE8CD;
+    --main-color:#ffd4d4;
+    --sub-color: #fdd9d3;
+    --light_color: #ffeae9;
     --dark-color: #eea0a0;
     --brownish: #cc5353;
 }
@@ -12,7 +12,12 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--light-color);
+    background-color: var(--main-color);
+    background-image: url('https://wallpaperaccess.com/full/8278296.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 header{
     background: var(--main-color);
@@ -22,6 +27,18 @@ header{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 10px rgba(255, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+#subtitle{
+    color: var(--dark-color);
+}
+
+#proyects{
+    background-image: url('https://wallpaperaccess.com/full/8278296.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 .tarjetas {
     display: flex;
@@ -50,6 +67,7 @@ header{
     border-radius: 30px;
     object-fit: cover;
 }
+
 .logo{
     width: 300px;
     height: 200px;
@@ -57,7 +75,8 @@ header{
     object-fit: cover;
     margin-bottom: 10px;
 }
-button{
+
+button {
     margin-top: 10px;
     background-color: var(--dark-color);
     color: var(--brownish);
@@ -68,13 +87,14 @@ button{
     transition: background 0.3 ease;
 }
 
-.perfil button:hover{
-    background-color: var(--dark-color);
+
+.proyecto button:hover{
+    background-color: var(--brownish);
+    color: var(--sub-color);
 }
 
-#subtitle{
-    color: var(--dark-color);
-}
+
+
 .headerSections{
     padding-top: 20px;
     display: flex;
@@ -82,15 +102,20 @@ button{
     align-items: flex-start;
 }
 .headerSections a{
-    color: var(--highlight-color);
+    color: var(--brownish);
     text-decoration: none !important;
     padding: 5px 10px;
     margin-right: 20px;
     border-radius: 10%;
     border: 2px;
     border-style: solid;
-    border-color: var(--dark-color);
-    background-color: var(--light-color);
+    border-color: var(--brownish);
+    background-color: var(--sub-color);
+}
+
+.headerSections a:hover{
+    background-color: var(--dark-color);
+    color: var(--sub-color);
 }
 
 .imgChica {
@@ -109,13 +134,20 @@ button{
     color:var(--dark-color);
 }
 .socialmedia-icons{
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    padding-right: 0px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--dark-color);
+    max-width: fit-content;
 }
 
 .socialmedia-icons img{
+    vertical-align: middle;
+    margin-right: 5px;
     width: 30px;
     height: 30px;
 }
@@ -124,20 +156,32 @@ button{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .etiquetas button{
     margin-right: 5px;
-    background-color: var(--sub-color);
+    background-color: var(--light_color);
     color: var(--dark-color);
     padding: 5px 10px;
 }
 
+.etiquetas button:hover{
+    /*variante para que simule el hover de un boton*/
+    background-color: var(--dark-color);
+    color: var(--light_color);
+    cursor: pointer;
+    /*variante para que NO simule el hover de un boton*/
+    background-color: var(--light_color);
+    color: var(--dark-color);
+    cursor: default;
+}
+
 .title{
     color: var(--brownish);
-    margin-top: 20px;
     padding: 10px;
-    background-color: var(--sub-color);
+    background-color: var(--main-color);
     display: flex;
     flex: wrap;
     justify-content: center;
@@ -145,16 +189,63 @@ button{
 
 .icon {
     width: 100px;
-    background-color: var(--dark-color);
-    border-radius: 10px;
     margin: 10px;
-    border-width: 10px;
-    padding: 5px 5px 0px 5px;
 }
+
+#experience {
+    background-image: url('https://wallpaperaccess.com/full/8278296.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.experience-details-container {
+    margin-top: 20px;
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.article-container article {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    background-color: var(--main-color);
+    padding: 10px;
+    padding-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.1);
+    height: 150px;
+}
+
+.article-container article h3{
+    color: var(--brownish);
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.article-container article p {
+    color: var(--dark-color);
+    margin: 0;
+    padding-left: 10px;
+}
+
+
 .experience-sub-title{
     color: var(--brownish);
     background-color: var(--main-color);
     margin: 10px;
     padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 5px;
+    max-width: fit-content;
 }
