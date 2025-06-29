@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Flammy Contreras</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script 
+    type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "ADa12evmcJJcOLVSA",
+        });
+    })();
+</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="main-title">Flammy Contreras</h1>
+            <h2 id="subtitle">Game Developer and Programmer</h2>
+            <p>Welcome to my portfolio web page!</p>
+            <div class="headerSections">
+                <a href="index.html">Home</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#experience">Skills</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="socialmedia-icons">
+                <a target="_blank" href="https://www.linkedin.com/in/flammycontreras/"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/500px-LinkedIn_logo_initials.png"
+                        alt="" class="imgChica"></a>
+                <a target="_blank" href="https://www.instagram.com/flammy_gamedev/"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"
+                        alt="" class="imgChica"></a>
+                <a target="_blank" href="https://github.com/FlammyContreras"><img
+                        src="https://images.icon-icons.com/3685/PNG/512/github_logo_icon_229278.png" alt=""
+                        class="imgChica"></a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to get in touch, feel free to reach out!</p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="button" class="btn" onclick="sendEmail()">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Flammy Contreras. All rights reserved.</p>
+        <p>Made with <span class="heart">&hearts;</span> by Flammy Contreras</p>
+        <p><a href="contact.html">Contact</a></p>
+        <div class="socialmedia-icons">
+                <a target="_blank" href="https://www.linkedin.com/in/flammycontreras/"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/500px-LinkedIn_logo_initials.png"
+                        alt="" class="imgChica"></a>
+                <a target="_blank" href="https://www.instagram.com/flammy_gamedev/"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"
+                        alt="" class="imgChica"></a>
+                <a target="_blank" href="https://github.com/FlammyContreras"><img
+                        src="https://images.icon-icons.com/3685/PNG/512/github_logo_icon_229278.png" alt=""
+                        class="imgChica"></a>
+            </div>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top</button>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

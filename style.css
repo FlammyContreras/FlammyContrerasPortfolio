@@ -1,9 +1,9 @@
 :root {
-    --main-color:#ffd4d4;
-    --sub-color: #fdd9d3;
-    --light_color: #ffeae9;
-    --dark-color: #eea0a0;
-    --brownish: #cc5353;
+    --main-color:#ffbfbf;
+    --sub-color: #ff9a9a;
+    --light_color: #ffe8e7;
+    --dark-color: #e77b7b;
+    --brownish: #c43f3f;
 }
 
 *{
@@ -29,6 +29,17 @@ header{
     box-shadow: 0 4px 10px rgba(255, 0, 0, 0.1);
     margin-bottom: 30px;
 }
+
+header p{
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+#main-title{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--brownish);
+}
 #subtitle{
     color: var(--dark-color);
 }
@@ -53,27 +64,45 @@ header{
     box-shadow: 0 4px 12px rgba(255, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 450px;
+    width: 550px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .proyecto:hover{
     transform: translateY(-10px);
     box-shadow: 0 6px 18px rgba(255, 167, 167, 0.15);
 }
-.proyecto img{
+
+.project-softwares p{
+    margin-top: 15px;
+    color: var(--brownish);
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+.project-softwares ul{
+    color: var(--brownish);
+}
+.screenshot{
     margin-top: 10px;
     width: 350px;
     height: 220px;
     border-radius: 30px;
     object-fit: cover;
+    border: solid;
+    border-width: 5px;
+    border-color: var(--dark-color);
 }
 
 .logo{
-    width: 300px;
-    height: 200px;
-    border-radius: 50%;
+    width: 250px;
+    height: 160px;
     object-fit: cover;
     margin-bottom: 10px;
+    border: none;
 }
 
 button {
@@ -94,6 +123,15 @@ button {
 }
 
 
+button a {
+    color: var(--brownish);
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+button a:hover {
+    color: var(--sub-color);
+}
 
 .headerSections{
     padding-top: 20px;
@@ -156,8 +194,21 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.etiquetas-title {
+    color: var(--brownish);
+    font-weight: bold;
+    margin-right: 10px;
+    padding-top: 5px;
+    margin-top: 10px;
+    font-size: 1.2em;
+}   
+
+.etiquetas a{
+    color: var(--dark-color);
+    text-decoration: none;
 }
 
 .etiquetas button{
@@ -185,6 +236,8 @@ button {
     display: flex;
     flex: wrap;
     justify-content: center;
+    align-items: center;
+    font-size: 2em;
 }
 
 .icon {
@@ -248,4 +301,85 @@ button {
     padding-right: 10px;
     border-radius: 5px;
     max-width: fit-content;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.container label {
+    color: var(--brownish);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    color: var(--brownish);
+    margin-bottom: 20px;
+}
+.container p {
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.container input,
+.container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--brownish);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.container button {
+    background-color: var(--brownish);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: var(--dark-color);
+}
+
+footer {
+    background-color: var(--main-color);
+    color: var(--brownish);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    box-shadow: 0 -4px 10px rgba(255, 0, 0, 0.1);
+}
+
+footer button {
+    background-color: var(--dark-color);
+    color: var(--brownish);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+footer button:hover {
+    background-color: var(--brownish);
+    color: var(--sub-color);
 }
